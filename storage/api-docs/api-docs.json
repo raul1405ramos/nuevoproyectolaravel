@@ -1,0 +1,135 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Título que mostraremos en swagger",
+        "description": "Descripcion",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "host de nuestro proyecto"
+        }
+    ],
+    "paths": {
+        "definimos la ruta del endpoint": {
+            "get": {
+                "tags": [
+                    "Un nombre para agrupar las rutas de nuestra API"
+                ],
+                "summary": "Título que define lo que hará esta URI",
+                "operationId": "3554c90013ebc91518b0d96e61063f49",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "rows": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "number",
+                                                        "example": "1"
+                                                    },
+                                                    "nombres": {
+                                                        "type": "string",
+                                                        "example": "Aderson Felix"
+                                                    },
+                                                    "apellidos": {
+                                                        "type": "string",
+                                                        "example": "Jara Lazaro"
+                                                    },
+                                                    "created_at": {
+                                                        "type": "string",
+                                                        "example": "2023-02-23T00:09:16.000000Z"
+                                                    },
+                                                    "updated_at": {
+                                                        "type": "string",
+                                                        "example": "2023-02-23T12:33:45.000000Z"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/posts": {
+            "get": {
+                "tags": [
+                    "Clientes"
+                ],
+                "summary": "Mostrar la información de un cliente",
+                "operationId": "8c251e608483daa2094595f54a1f4f29",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "number",
+                                            "example": 1
+                                        },
+                                        "nombres": {
+                                            "type": "string",
+                                            "example": "Aderson Felix"
+                                        },
+                                        "apellidos": {
+                                            "type": "string",
+                                            "example": "Jara Lazaro"
+                                        },
+                                        "created_at": {
+                                            "type": "string",
+                                            "example": "2023-02-23T00:09:16.000000Z"
+                                        },
+                                        "updated_at": {
+                                            "type": "string",
+                                            "example": "2023-02-23T12:33:45.000000Z"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "No query results for model [App\\\\Models\\\\Post] #id"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

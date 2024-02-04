@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .parallax-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .boton{
+margin-top: -20px;
+max-height: 100vh;
+    
+  }
+
+  .parallax-item2 {
+    display: flex;
+    padding-top: 75px;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .parallax-item h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .parallax-item2 h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .parallax-item:first-child {
+    background: url("./HOYOPUEBLO.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect for DIV 3 */
+    min-height: 800px;
+    height: 300px;
+    width: 100%;
+
+  }
+
+
+  .contenedor-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+  }
+
+  
+  .parallax-item:nth-child(2) {
+    background: whitesmoke;
+  }
+  
+  .parallax-item2 {
+    background: url("./imagen2.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect for DIV 3 */
+    min-height: 600px;
+    width: 101.5%;
+  }
+
+  .parallax-item3{
+    background: hsl(0, 0%, 96%);
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
+  }
+
+  h3{
+    text-align: center;
+  }
+
+
+  
+  .parallax-item:nth-child(4) {
+    background: #1565c0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .parallax-item h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 215px){
+    .LOGOTIPO{
+      transform: translateX(-250px);
+    }
+  }
+
+  .container-fluid{
+    
+    width: 100%;
+    text-align: center;
+  }
+
+  .imagen-social {
+    width: 100px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  
+  
