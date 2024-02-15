@@ -47,6 +47,7 @@
      <div class="container">
         <div class="login-container">
         <form action="{{ route('cliente.update', $cliente->id) }}" method="post">
+          
         <h1>Modificar Cliente</h1>
       
         @csrf
